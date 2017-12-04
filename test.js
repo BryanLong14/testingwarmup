@@ -15,3 +15,12 @@ describe('#reverses a string', function(){
     expect(myFunc.reverseMe(numberStr).to.deep.equal(numsReversed))
   })
 })
+
+describe('#finds remainder', function(){
+  it('finds the remainder after dividing 23 by 20', function(){
+    expect(myFunc.findTheRemainder(23, 20).to.equal(3))
+  })
+  it('finds the remainder of 63/13', function(){
+    expect(myFunc.findTheRemainder(63/13).to.equal(11))
+  })
+})
